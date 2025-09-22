@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<img>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        border-right: 1px solid rgb(200, 200, 200);
+        height: 840px;
+        margin-left: 10px;
+        position: fixed;
+      }
+      .inside {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        gap: 5px;
+      }
+      .inside img {
+        width: 35px;
+        height: 35px;
+      }
+      .buttom {
+        margin-top: 240px;
+      }
+      .grid {
+        margin-left: 400px;
+        width: 860px;
+        height: 1100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 3px;
+      }
+      .box1 {
+        background-color: black;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box2 {
+        background-color: black;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box3 {
+        background-color: black;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box4 {
+        background-color: black;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box5 {
+        background-color: black;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box6 {
+        background-color: black;
+        grid-column: 3/4;
+        grid-row: 3/4;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box7 {
+        background-color: black;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box8 {
+        background-color: black;
+        grid-column: 1/2;
+        grid-row: 3/5;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box9 {
+        background-color: black;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+      .box10 {
+        background-color: black;
+        grid-column: 3/4;
+        grid-row: 4/5;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+
+      .box1 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box2 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box3 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box4 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box5 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box6 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box7 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box8 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box9 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+      .box10 .hov:hover {
+        position: relative;
+        z-index: 100;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <h3 style="margin-left: 10px; font-family: cursive">Instagram</h3>
+      <div class="inside">
+        <img src="./house.png" alt="" />
+        <p>Главная</p>
+      </div>
+      <div class="inside">
+        <img src="./search.png" alt="" />
+        <p>Поисковый запрос</p>
+      </div>
+      <div class="inside">
+        <img src="./komp.png" alt="" />
+        <p>Интересное</p>
+      </div>
+      <div class="inside">
+        <img src="./reel.png" alt="" />
+        <p>Reels</p>
+      </div>
+      <div class="inside">
+        <img src="./plane.png" alt="" />
+        <p>Сообщения</p>
+      </div>
+      <div class="inside">
+        <img src="./like.png" alt="" />
+        <p>Уведомления</p>
+      </div>
+      <div class="inside">
+        <img src="./plus.png" alt="" />
+        <p>Создать</p>
+      </div>
+      <div class="inside">
+        <img src="./avatar.png" alt="" />
+        <p>Профиль</p>
+      </div>
+      <div class="buttom">
+        <div class="inside">
+          <img src="./lines.png" alt="" />
+          <p>Ещё</p>
+        </div>
+        <div class="inside">
+          <img src="./triple.png" alt="" />
+          <p>Другие продукты ...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="box1">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin1.png"
+          alt=""
+        />
+      </div>
+      <div class="box2">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin2.png"
+          alt=""
+        />
+      </div>
+      <div class="box3">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            margin-top: 120px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./reels2.png"
+          alt=""
+        />
+      </div>
+      <div class="box4">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin4.png"
+          alt=""
+        />
+      </div>
+      <div class="box5">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin5.png"
+          alt=""
+        />
+      </div>
+      <div class="box6">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin6.png"
+          alt=""
+        />
+      </div>
+      <div class="box7">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./Unknown-16.jpg"
+          alt=""
+        />
+      </div>
+      <div class="box8">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            margin-top: 120px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./reels1.png"
+          alt=""
+        />
+      </div>
+      <div class="box9">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./Unknown-5.jpg"
+          alt=""
+        />
+      </div>
+      <div class="box10">
+        <img
+          style="
+            width: 40px;
+            height: 40px;
+            padding: 120px;
+            position: absolute;
+            z-index: -999;
+          "
+          src="./comment2.png"
+          alt=""
+        />
+
+        <img
+          class="hov"
+          style="object-fit: cover; width: 100%; height: 100%"
+          src="./pin3.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- <button>
+      <img src="./plane.png" alt="" />
+      <span>Сообщения</span>
+    </button> -->
+  </body>
+</html>
